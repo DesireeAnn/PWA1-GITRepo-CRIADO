@@ -1,13 +1,25 @@
+/*Desiree Criado
+PWA1-0501
+5/8/15
+goal1_assign1_duel1
+ */
 
+//self-executing function
+(function(){
+    console.log("FIGHT!");
+})();
 
 //players' names
 var oneName;
+var twoName;
 
 //player's remaining health
 var oneHealth;
+var twoHealth;
 
 //amount of damage player can cause
 var oneDamage;
+var twoDamage;
 
 //function loops through rounds and reduces health accordingly
 function fight ();
