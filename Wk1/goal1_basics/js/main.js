@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  PWA1-####
+     Name: Desiree Criado
+     Date: 5/6/15
+     Class & Section:  PWA1-0501
      Comments: "Goal 1: Review of WPF"
  */
 
@@ -49,74 +49,115 @@
     - legal   var name007;
 */
 // variables
-console.log('------ variables ----------');
+console.log ("Hello World!");
+console.log ("------ variables ----------");
 
     //example 1: variables defined properly
 
-
+    //var course = "PWA1";
+    //var month = 3;
+    //console.log ("name: ", name + " / course: ", course + " / month: ", month);
+    //var name = "desiree";
     //example 2: variables not defined will = "undefined"
-
+    //var name, course, month;
+    //console.log ("name: ", name + " / course: ", course + " / month: ", month);
 
     //example 3: a mix of variables defined and not defined
-
+    var name, course = "PWA1", month = "May";
+    console.log ("name: ", name + " / course: ", course + " / month: ", month);
 
     //example 4: declaring multiple variables at once w/ same value
-
+    var a = b = c = d = 10;
+    console.log ("a: ", a + " / b: ", b + " / c: ", c + " / d: ", d);
 
 
 // string (definition, concatenation, escape character)
-console.log('------ strings ----------');
+console.log("------ strings ----------");
+    var name = "James Bond";
+    console.log(name);
 
     //basic string
-
+    var testString = "He's in PWA1";
+    console.log("Example 1: ", testString);
 
     //string w/ escape characters " \ "
+    var testString = "I need some \"quotes\" to be here.";
+    console.log("Example 2: ", testString);
 
+    var testString = 'He\'s in PWA1';
+    console.log("Example 3: ", testString);
 
     //string w/ escape characters and mixed single/double quotes
-
+    var testString = 'he\'s in ' + '"PWA1"';
+    console.log("Example 4: ", testString);
 
     //this example shows that all the "phase" vars above were overwritten
-
-
+    var num = 3;
+    var testString = 'he\'s in PWA1 '+ num;
+    console.log("Example 5: ", testString);
 
 // numbers (definition, concatenation +, math, numbers & strings)
-console.log('------ numbers ----------');
+console.log("------ numbers ----------");
 
     // arithmetic operators:  +, -, /, *, % (modulo)
 
-
     //basic math
-
+    var counter = 10;
+    console.log("basic math: ", counter + 1);
+    console.log("basic math: ", counter);
 
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
     //one example below, can show more examples with other assignment operators
-
+    var num1 = 10;
+    var num2 = 5;
+    num1 += num2;
+    console.log("+= ", num1);
 
     //increment or decrement numbers by 1 with ++ or --
+    var myNum = 5;
+    console.log("myNum = ", myNum);
+
+    myNum++;
+    console.log("myNum = ", myNum);
+
+    myNum--;
+    console.log("myNum = ", myNum);
 
     //this decrements right before it is being used
+    var num = 10;
+    --num;
+    console.log("--counter: ", num);
 
     //this decrements after it is used
+   // num--;
+    //console.log("counter--: ", num);
 
     //comment out the above example
     //this decrements after it is being used as well
-
+    console.log("counter--: ", num--);
+    console.log("counter: ", num);
 
     //add a number to a string is always a string
-
+    var myStr = "6" + 2;
+    console.log("Number + String: ", myStr);
+    //62 is printed to console: always equals a string
 
     //other math operations will result in a number
-
+    var myStr = "6" / 2;
+    console.log("Number / String: ", myStr);
+    //3 printed to console
 
     //order of operations: ( ), *, /, +, -
-
+    var num = 4+ (6 * 5 - 10) / 5;
+    console.log("order of operations: ", num);
 
     //modulo example
-
+    var num1 = 10;
+    var num2 = 3;
+    console.log("Remainder: ", num1%num2);
 
 // arrays: (definition, indexing, getter/setter)
-console.log('------ arrays ----------');
+console.log("------ arrays ----------");
 
 /*
     BREAKING AN ARRAY DOWN TO INDIVIDUAL PIECES
@@ -151,7 +192,9 @@ console.log('------ arrays ----------');
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
+    var myArr = new myArr[10, 50, 100, 200];
 
+    console.log(
 
 
 /*******************************************
@@ -171,10 +214,9 @@ console.log('------ arrays ----------');
 
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
-console.log('------ conditionals ----------');
+console.log("------ conditionals ----------");
 
  /*
-
     a CONDITION is a boolean test between two values, the resulting boolean can be saved
 
     IF Statement
@@ -184,7 +226,6 @@ console.log('------ conditionals ----------');
             testing a condition
         - if a specified condition evaluates to true (it’s either true or false),
             then a block of code or a group of actions are executed
-
 
     BREAKING A VARIABLE DOWN TO INDIVIDUAL PIECES
 
@@ -203,14 +244,12 @@ console.log('------ conditionals ----------');
         a true or false boolean
     - conditions can be used just about anywhere, not just in conditionals and loops
 */
-
-
-
+    var myVar = 5 > 3;
+    console.log("is 5 greater than 3: ", myVar);
 /*
      most common comparison operators:
      > < >=  <=  !== ! ==  ===
      Sort: A-Za-z
-
 
     A conditional is a block of code that only runs if the condition is
         true (example, state switching)
@@ -220,9 +259,10 @@ console.log('------ conditionals ----------');
             //block of code or ‘actions’
          };
 */
-
-
-
+    if (5 > 3){
+      //execute code here
+        console.log("'5 > 3:' True!");
+    };
 /*
     - a common mistake is to use the assignment operator  = instead of the ==
     - ==  used for comparing items
@@ -232,11 +272,19 @@ console.log('------ conditionals ----------');
        === is the identity operator, checks data type match - will use this
     ================================================================
 */
-
     // == performs a loose check of two values
-
-
-
+    if ("1" == 1){
+        console.log("'1 == 1', True");
+    };
+    if (1 == 1){
+        console.log("'1 == 1', True");
+    };
+    if ("1" === 1){
+        console.log("'1 === 1', False");
+    };
+    if ("1" !== 1){
+        console.log("'1 !== 1', True");
+    };
 /* ==============================================================
     if - else statements (allows only for one option)
 
@@ -248,16 +296,36 @@ console.log('------ conditionals ----------');
 
  ================================================================
  */
-
-
+    if ("a" === "b"){
+        //TRUE: run code
+        console.log("a is less than b");
+    }else{
+        //FALSE:run code
+        console.log("if-else: the IF statement is false");
+    };
 
     //if - else if - else (allows for multiple options)
-
-
+    if ("a" === "b"){
+        console.log("a is less than b");
+    }else if ("a" < "c"){
+        console.log("a is less than c");
+    }else if ("a" < "d"){
+        console.log("a is less than d");
+    }else{
+        console.log("if-else if: all others returned false");
+    };
 
     //nested conditional statement
+    if ("a" !== "a"){
 
-
+        if ("b" === "b"){
+            console.log("In nested if-else / b === b: True");
+        }else{
+        //execute block of code if the matching "IF" statement is false
+        }
+    }else{
+        console.log("nested conditional: 1st IF returned false");
+    };
 
 /* ==============================================================
  LOGICAL operators
@@ -276,17 +344,28 @@ console.log('------ conditionals ----------');
  */
 
     //AND logical operator
-
+    if ( (1 === 1) && ("hi" === "hi") ){
+        console.log("&& logical operator: both sides = true");
+    };
 
     //OR logical operator
-
+    if ( (1 === 1) || ("hi" === "no") ){
+        console.log("|| logical operator: one side = true");
+    };
 
     // ! NOT logical operator
-
+    if ( !(1 === 1 || "hi" === "no" )){
+        console.log("! NOT logical operator: left is true converted to NOT");
+    }else{
+        console.log("! NOT logical operator: both sides = false");
+    };
 
     // all logical operators with order of operations
-
-
+    if (5 < 2 || (1 === 1 && ! (2 == "2" || 5 < 2))){
+        console.log("logical operator: true");
+    }else{
+        console.log("logical operator: false");
+    };
 
 /*******************************************
  STUDENT ACTIVITY 3:
@@ -299,9 +378,15 @@ console.log('------ conditionals ----------');
  GOAL
     1. learn if - else
  ********************************************/
+    var weather = "cloudy";
 
+    if (weather == "sunny"){
+        bobsMood = "Bob is happy :D";
+    }else{
+        bobsMood = "Bob is sad :(";
+    };
 
-
+    console.log("If-Else weather: ", bobsMood);
 
 /*******************************************
  STUDENT ACTIVITY 4:
@@ -318,9 +403,30 @@ console.log('------ conditionals ----------');
         - else bobsMood = "sad"
     3.  console.log the results after each conditional
  ********************************************/
+    var weather = "cloudy";
+    var waves = 10;
 
+    if (weather === "sunny") {
+        if (waves === 10) {
+            bobsMood = "Bob is PUMPED";
+        } else if ((waves >= 9) && (waves >= 5)) {
+            bobsMood = "Bob is mellow";
+        } else {
+            bobsMood = "Bob is bummed";
+        }
+    }else if (weather === "overcast") {
+        if ((waves < 10) && (waves >= 7)) {
+            bobsMood = "Bob is Jacked Up";
+        } else if ((waves < 6) && (waves >= 3)) {
+            bobsMood = "Bob is totally bummed";
+        } else {
+            bobsMood = "Bob is not happy :(";
+        }
+    }else{
+        bobsMood = "Bob is sad.";
+    };
 
-
+    console.log("If-Else If weather: ", bobsMood);
 
 /*
     BREAKING A TERNARY CONDITIONAL DOWN TO INDIVIDUAL PIECES
@@ -339,10 +445,14 @@ console.log('------ conditionals ----------');
         returns a statement based on a condition being true or false
     - condition = conditional statement like "a < b"
     - ? = perform the next statement if true
-    - : = false (perform the new statement after the :)
- */
+    - : = false (perform the new statement after the :)*/
 
+    var weather = "sunny";
+    var mood = (weather == "sunny" ? "happy" : "sad");
+    console.log("mood: ", mood);
 
+    var smile = true;
+    console.log("I am " + (smile === true ? "happy" : "sad") + "!!");
 
 /*******************************************
  STUDENT ACTIVITY 5:
@@ -356,10 +466,14 @@ console.log('------ conditionals ----------');
     4.  console.log the results
  ********************************************/
 
+    var temp = 60;
+    var weather = "sunny";
+    var student1 = (weather !== "sunny" ? "happy" : ((temp <= 80) ? "content" : "sad"));
+    console.log("Nested ternary result: ", student1);
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
-console.log('------Functions ----------');
+console.log("------Functions ----------");
 
 
 /*

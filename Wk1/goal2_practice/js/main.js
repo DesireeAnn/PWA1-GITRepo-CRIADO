@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  PWA1-####
+     Name: Desiree Criado
+     Date: 5/7/15
+     Class & Section:  PWA1-0501
      Comments: "Goal 2: JavaScript Practice"
  */
 
