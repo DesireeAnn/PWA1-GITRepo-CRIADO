@@ -24,7 +24,7 @@
 
 
 //round variable
-    var round = 1;
+    var round = 0;
 
 //fight function
     function fight(){
@@ -57,7 +57,16 @@
             console.log(oneName + ":"+ oneHealth + " " + twoName + ":" + twoHealth);
 
             //call Winner check function
-            winnerCheck();
+            var results = winnerCheck();
+            console.log(results);
+
+            if(results === "no winner"){
+                round++;
+                alert(oneName + ":"+ oneHealth + " *ROUND " + round + " IS OVER* " + twoName + ":" + twoHealth);
+            }else{
+                alert(results);
+                break;
+            };
 
         };
 
@@ -66,8 +75,20 @@
 
 //winner check at the end of every round: one player with health<=0, or both are 0 or less
     function winnerCheck(){
+        console.log("in winner check function");
     //code to determine if there is a winner at the end of each round
         var result = "no winner";
+
+        if (oneHealth<1 && twoHealth<1){
+            result = "You Both Die";
+        }else if(oneHealth<1){
+            result = twoName + " WINS!";
+        }else if(twoHealth<1){
+            result = oneName + " WINS!";
+        };
+
+        return result;
+
     };
 
 //call function: program starts
