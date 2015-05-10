@@ -10,7 +10,7 @@
 
 //Player's names
     var oneName = "Subzero";
-    var twoName = "Skorpion";
+    var twoName = "Scorpion";
 
     console.log(oneName + " vs " + twoName);
 
@@ -59,7 +59,7 @@
             //call Winner check function
             var results = winnerCheck();
             console.log(results);
-
+            //break loop
             if(results === "no winner"){
                 round++;
                 alert(oneName + ":"+ oneHealth + " *ROUND " + round + " IS OVER* " + twoName + ":" + twoHealth);
@@ -78,11 +78,13 @@
         console.log("in winner check function");
     //code to determine if there is a winner at the end of each round
         var result = "no winner";
-
+        //both players < 0
         if (oneHealth<1 && twoHealth<1){
             result = "You Both Die";
+        //player 2 wins
         }else if(oneHealth<1){
             result = twoName + " WINS!";
+        //player 1 ones
         }else if(twoHealth<1){
             result = oneName + " WINS!";
         };
@@ -96,6 +98,6 @@
 
     fight();
 
-//break loop
+
 
 })();
