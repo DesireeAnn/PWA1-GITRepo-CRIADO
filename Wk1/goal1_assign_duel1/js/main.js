@@ -11,7 +11,7 @@
 //Player's names
     var oneName = "Subzero";
     var twoName = "Scorpion";
-
+    //print to console
     console.log(oneName + " vs " + twoName);
 
 //Player's health
@@ -59,7 +59,7 @@
             //call Winner check function
             var results = winnerCheck();
             console.log(results);
-            //break loop
+            //break loop if round >10
             if(results === "no winner"){
                 round++;
                 alert(oneName + ":"+ oneHealth + " *ROUND " + round + " IS OVER* " + twoName + ":" + twoHealth);
