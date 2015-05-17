@@ -1,7 +1,7 @@
 /*Desiree Criado
- 5/9/15
+ 5/16/15
  PWA1-0501
- goal1_assign1_duel1
+ goal2_assign2_duel2
  */
 
 //self-executing function
