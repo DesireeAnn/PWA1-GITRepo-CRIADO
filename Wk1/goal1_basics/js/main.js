@@ -181,7 +181,10 @@ console.log("------ arrays ----------");
  */
 
     //arrays can hold any data type
-
+    console.log("index 0: ", myArr[0]);
+    console.log("index 1: ", myArr[1]);
+    console.log("index 2: ", myArr[2]);
+    console.log("index 3: ", myArr[3]);
 
 
  /*******************************************
@@ -192,10 +195,8 @@ console.log("------ arrays ----------");
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
-    var myArr = new myArr[10, 50, 100, 200];
-
-    console.log(
-
+    var newArr = [10, 50, 100, 200];
+    console.log("Sum: ", newArr[0] + newArr[1] + newArr[2] + newArr[3]);
 
 /*******************************************
 
@@ -209,8 +210,13 @@ console.log("------ arrays ----------");
     1. creating an empty array
     2. setters to add to the array
     3. output array items using string concatenation
-
  ********************************************/
+
+    var myArray = new Array();
+    myArray[0] = "baseball";
+    myArray[1] = "football";
+    myArray[2] = "basketball";
+    console.log(myArray[0] + ", " + myArray[1] + ", " + myArray[2]);
 
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
@@ -513,10 +519,17 @@ console.log("------Functions ----------");
 
      - type the below as an example
         functionName();
- *****************************
+ *****************************/
 
+    var myctr = 1;
+    var myCounter = function (){
+        var testVar = 0;
+        myctr++;
+        console.log("counter = ", myctr);
+    };
 
-
+    myCounter();
+    myCounter();
 
  /*
     function literal: passing data into a function
@@ -554,7 +567,13 @@ console.log("------Functions ----------");
  */
 
 
+    var value1 = 1;
+    var value2 = 2;
+    var myFn = function(var1, var2) {
+        console.log("function number: ", var1 + var2);
+    };
 
+    myFn (value1, value2);
 
 /*******************************************
  STUDENT ACTIVITY 6:
@@ -567,6 +586,12 @@ console.log("------Functions ----------");
      5.  second time: pass a 2 into the funciton as an argument
      6.  console.log the results
  ********************************************/
+    var myctr = 1;
+    var myCounter = function (){
+        var testVar = 0;
+        myctr++;
+        console.log("counter = ", myctr);
+};
 
 
 
